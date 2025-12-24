@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Trắc Nghiệm Khoa Học</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Đồng hồ -->
+  <div class="timer-floating">
+    <div class="timer-label">Thời gian</div>
+    <div id="timer-value" class="timer-value">05:00</div>
+  </div>
+
+  <!-- POPUP -->
+  <div class="modal-overlay" id="result-modal">
+    <div class="modal-dialog">
+      <h3>Kết quả</h3>
+      <div class="modal-row"><span>Đúng:</span><span id="modal-correct">3</span></div>
+      <div class="modal-row"><span>Sai:</span><span id="modal-wrong">2</span></div>
+      <div class="modal-row"><span>Tổng điểm:</span><span id="modal-score">6 / 10</span></div>
+      <div class="modal-row"><span>Thời gian:</span><span id="modal-time">03:12</span></div>
+      <button class="submit-btn" id="close-btn">Đóng</button>
+    </div>
+  </div>
+
+  <!-- DANH SÁCH CÂU HỎI -->
+  <div id="quiz-container" class="quiz-container">
+
+    <!-- Câu 1 – trạng thái: chưa trả lời -->
+    <!-- <div class="question-card">
+      <div class="question-header">
+        <div class="question-number">1</div>
+        <div class="question-text">Trái Đất quay quanh Mặt Trời mất bao lâu?</div>
+        <span class="status-label not-answered">Chưa trả lời</span>
+      </div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q1"> A. 1 ngày</label>
+        <label class="option"><input type="radio" name="q1"> B. 1 tuần</label>
+        <label class="option" data-correct="true"><input type="radio" name="q1"> C. 1 năm</label>
+        <label class="option"><input type="radio" name="q1"> D. 10 năm</label>
+      </div>
+    </div> -->
+
+    <!-- Câu 2 – trạng thái: đúng -->
+    <!-- <div class="question-card">
+      <div class="question-header">
+        <div class="question-number">2</div>
+        <div class="question-text">Bộ phận nào của cây quang hợp?</div>
+        <span class="status-label correct">Đúng</span>
+      </div>
+      <div class="options">
+        <label class="option correct"><input type="radio" name="q2"> A. Lá</label>
+        <label class="option"><input type="radio" name="q2"> B. Rễ</label>
+        <label class="option"><input type="radio" name="q2"> C. Thân</label>
+        <label class="option"><input type="radio" name="q2"> D. Hoa</label>
+      </div>
+    </div> -->
+
+    <!-- Câu 3 – trạng thái: sai -->
+    <!-- <div class="question-card">
+      <div class="question-header">
+        <div class="question-number">3</div>
+        <div class="question-text">Nước sôi ở bao nhiêu °C?</div>
+        <span class="status-label wrong">Sai</span>
+      </div>
+      <div class="options">
+        <label class="option wrong"><input type="radio" name="q3"> A. 50°C</label>
+        <label class="option correct"><input type="radio" name="q3"> B. 100°C</label>
+        <label class="option"><input type="radio" name="q3"> C. 120°C</label>
+        <label class="option"><input type="radio" name="q3"> D. 0°C</label>
+      </div>
+    </div> -->
+
+    <!-- Câu 4 -->
+    <!-- <div class="question-card">
+      <div class="question-header">
+        <div class="question-number">4</div>
+        <div class="question-text">Động vật nào là động vật có vú?</div>
+        <span class="status-label not-answered">Chưa trả lời</span>
+      </div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q4"> A. Cá vàng</label>
+        <label class="option"><input type="radio" name="q4"> B. Cá heo</label>
+        <label class="option" data-correct="true"><input type="radio" name="q4"> C. Chó</label>
+        <label class="option"><input type="radio" name="q4"> D. Ếch</label>
+      </div>
+    </div> -->
+
+    <!-- Câu 5 -->
+    <!-- <div class="question-card">
+      <div class="question-header">
+        <div class="question-number">5</div>
+        <div class="question-text">Không khí gồm phần lớn khí nào?</div>
+        <span class="status-label not-answered">Chưa trả lời</span>
+      </div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q5"> A. Oxy</label>
+        <label class="option" data-correct="true"><input type="radio" name="q5"> B. Nitơ</label>
+        <label class="option"><input type="radio" name="q5"> C. CO₂</label>
+        <label class="option"><input type="radio" name="q5"> D. Heli</label>
+      </div>
+    </div> -->
+
+    <button class="submit-btn" id="submit-btn" onclick="funcOpenModal(false)">Nộp bài</button>
+
+  </div>
+
+  <script src="func.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script src="timer.js"></script>
+</body>
+
+</html>
