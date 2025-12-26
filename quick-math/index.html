@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập thao tác với 2 số</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 600px;
+      background: #1f2937;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, .4);
+    }
+
+    .row {
+      margin-bottom: 16px;
+    }
+
+    label {
+      font-size: 14px;
+      color: #9ca3af;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #374151;
+      background: #0b1220;
+      color: #e5e7eb;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1 1 calc(33% - 10px);
+      padding: 10px;
+      text-align: center;
+      background: #334155;
+      color: #e5e7eb;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      border: 1px solid #475569;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #1e293b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Dòng 1: nhập 2 số -->
+    <div class="row">
+      <label for="num1">Số thứ nhất</label>
+      <input type="number" id="num1" placeholder="Nhập số thứ nhất...">
+    </div>
+    <div class="row">
+      <label for="num2">Số thứ hai</label>
+      <input type="number" id="num2" placeholder="Nhập số thứ hai...">
+    </div>
+
+    <!-- Dòng 2: các nút -->
+    <div class="row buttons">
+      <div id="plus" class="btn">Cộng</div>
+      <div id="minus" class="btn">Trừ</div>
+      <div id="multiply" class="btn">Nhân</div>
+      <div id="divide" class="btn">Chia</div>
+      <div id="exponentiation" class="btn">Lũy thừa</div>
+      <div id="compare" class="btn">So sánh</div>
+    </div>
+
+    <!-- Dòng 3: kết quả -->
+    <div class="row">
+      <label for="result">Kết quả</label>
+      <input type="text" id="result" placeholder="Kết quả sẽ hiển thị ở đây..." readonly>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>

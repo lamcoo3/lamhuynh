@@ -1,0 +1,139 @@
+footer {
+  margin-top: 50px;
+  padding: 80px 80px 66px 80px;
+  background-color: #011C2A;
+}
+
+footer h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+
+footer h2 span {
+  color: #F6AF03;
+}
+
+footer div.footer-content {
+  display: flex;
+  gap: 48px;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 19px;
+}
+
+footer div.footer-content div.footer-contact {}
+
+footer div.footer-content div.footer-contact h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+footer div.footer-content div.footer-contact ul li {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 25px;
+}
+
+footer div.footer-content div.footer-contact ul li:last-child {
+  margin-bottom: 0px;
+}
+
+footer div.footer-content div.footer-contact ul li i {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+footer div.footer-content div.footer-contact ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+footer div.footer-content div.footer-link {
+  width: 12%;
+}
+
+footer div.footer-content div.footer-link h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+footer div.footer-content div.footer-link ul li {
+  margin-bottom: 24px;
+}
+
+footer div.footer-content div.footer-link ul li:last-child {
+  margin-bottom: 0px;
+}
+
+footer div.footer-content div.footer-link ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+footer div.footer-content div.footer-form {
+  border-radius: 10px;
+  background-color: #011621;
+  padding: 14px 13px 21px 14px;
+  width: 25%;
+}
+
+footer div.footer-content div.footer-form h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 29px;
+}
+
+footer div.footer-content div.footer-form form {
+  display: flex;
+  margin-bottom: 19px;
+}
+
+footer div.footer-content div.footer-form form input.text {
+  width: 70%;
+  border-radius: 4px;
+  background-color: #02273A;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #616161;
+  padding: 12px 10px;
+  border: 0px;
+}
+
+footer div.footer-content div.footer-form form input.subscribe {
+  width: 30%;
+  background: #000E15;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  padding: 11px 22px 10px 22px;
+  background-color: #000E15;
+  border: 0px;
+}
+
+footer div.footer-content div.footer-form p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #FFFFFF;
+}

@@ -13,7 +13,7 @@ let remain = LIMIT_TIME;
 let timer = null;
 let totalTime = LIMIT_TIME;
 elmTimerValue.innerText = formatTime(totalTime);
-QUESTIONS = getRandomQuestions(QUESTIONS, 5);
+QUESTIONS = getRandomQuestions(QUESTIONS, 3);
 
 renderQuiz(QUESTIONS);
 
@@ -91,6 +91,7 @@ function renderQuiz(data) {
                         <input onclick = "funcSelectAnswer(${id}, '${optionKey}')" type="radio" name="question-${id}"> ${optionKey}. ${optionText}
                           </label>`
     }
+
     result += `<div class="question-card">
       <div class="question-header">
         <div class="question-number">${i + 1}</div>

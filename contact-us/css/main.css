@@ -1,0 +1,9 @@
+@import "reset.css";
+@import "header.css";
+@import "section-contact.css";
+@import "footer.css";
+@import "media-phone.css";
+
+div.main-content {
+  background-color: #FBFBFB;
+}

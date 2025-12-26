@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tạo hình vuông ASCII</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel2: #1f2937;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --ring: rgba(34, 211, 238, .35);
+      --btn: #334155;
+      --btnh: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, #0ea5e9 0, transparent 60%),
+        radial-gradient(900px 500px at 120% 20%, #22d3ee 0, transparent 45%), var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px
+    }
+
+    .app {
+      width: 100%;
+      max-width: 780px;
+      background: linear-gradient(180deg, var(--panel), var(--panel2));
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: 16px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, .45);
+      overflow: hidden
+    }
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, .06)
+    }
+
+    .brand {
+      font-weight: 800
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .row {
+      display: grid;
+      gap: 8px;
+      padding: 14px 20px
+    }
+
+    label {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      background: #0b1220;
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 12px;
+      padding: 12px 12px;
+      outline: none;
+      transition: box-shadow .2s, border-color .2s
+    }
+
+    textarea {
+      min-height: 220px;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      box-shadow: 0 0 0 6px var(--ring);
+      border-color: var(--accent)
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 6px 20px 16px
+    }
+
+    .btn {
+      background: var(--btn);
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, .08);
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700
+    }
+
+    .btn:hover {
+      background: var(--btnh)
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px 16px;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .ok {
+      color: #22c55e;
+      font-weight: 700
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app" role="application">
+    <div class="head">
+      <div class="brand">■ Tạo hình vuông ASCII</div>
+      <div class="muted">Dòng 1: số | Dòng 2: chuỗi | Dòng 3: chọn kiểu | Dòng 4: kết quả</div>
+    </div>
+
+    <!-- Dòng 1: nhập số -->
+    <div class="row">
+      <label for="size">Kích thước (n)</label>
+      <input id="size" type="number" min="1" max="100" placeholder="Nhập số nguyên, ví dụ: 6" />
+    </div>
+
+    <!-- Dòng 2: nhập chuỗi -->
+    <div class="row">
+      <label for="token">Chuỗi dùng làm ký tự vẽ (lấy ký tự đầu tiên). Để trống sẽ dùng '*'</label>
+      <input id="token" type="text" placeholder="Ví dụ: # hoặc xo" />
+    </div>
+
+    <!-- Dòng 3: select -->
+    <div class="row">
+      <label for="mode">Kiểu hình</label>
+      <select id="mode">
+        <option value="square">hình vuông</option>
+        <option value="square-border">hình vuông rỗng</option>
+        <option value="pyramid">hình chóp</option>
+      </select>
+    </div>
+
+    <!-- nút thao tác (tùy chọn) -->
+    <div class="controls">
+      <button class="btn" id="build">Tạo hình</button>
+      <button class="btn" id="copy">Copy kết quả</button>
+      <button class="btn" id="clear">Xóa</button>
+    </div>
+
+    <!-- Dòng 4: kết quả -->
+    <div class="row">
+      <label for="out">Kết quả</label>
+      <textarea id="out" readonly placeholder="Hình ASCII sẽ xuất hiện ở đây…"></textarea>
+    </div>
+
+    <div class="foot">
+      <span>Tip: dùng phông chữ đơn cách (monospace) để canh hàng đẹp.</span>
+      <span id="status" class="ok" aria-live="polite"></span>
+    </div>
+    <script src="app.js"></script>
+  </main>
+
+
+</body>
+
+</html>

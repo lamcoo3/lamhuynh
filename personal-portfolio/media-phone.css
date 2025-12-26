@@ -1,0 +1,64 @@
+@media only screen and (max-width: 600px) {
+  div.slide div.info h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    vertical-align: middle;
+    text-align: left;
+    color: #1F1F25;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  ul li.active {
+    padding: 6px 13px;
+  }
+
+  div.slide {
+    padding: 30px 0px;
+  }
+
+  div h1 {
+    font-size: 35px;
+  }
+
+  div div.list-article {
+    margin-top: 60px;
+    font-size: 0px;
+  }
+
+  div div.list-article div.article {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0px;
+  }
+
+  div.slide div.info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+    width: 100%;
+  }
+
+  div.project {
+    padding-top: 50px;
+  }
+
+  div div.list-article {
+    margin-top: 60px;
+    font-size: 0px;
+    padding: 0px 30px;
+  }
+
+  div div.list-article div.article div.text h6 {
+    margin-top: 13px;
+  }
+
+  footer {
+    padding: 15px 0px;
+  }
+}

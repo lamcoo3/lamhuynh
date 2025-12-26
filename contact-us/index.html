@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_cacheOverride=1756081402380"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="main-content">
+		<header id="header">
+			<a id="header-logo" href="#" class="logo"><span>Logo</span>&nbsp;Here</a>
+			<ul class="menu mobile-menu" id="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="">Features</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Shop</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+			<ul id="header-info" class="info">
+				<li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+				<li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+			</ul>
+			<a id="menu-icon" href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</header>
+
+		<section class="contact" id="contact">
+			<div class="title">
+				<h1>Contact Us</h1>
+				<p>Any question or remarks? Just write us a message!</p>
+			</div>
+
+			<div class="body">
+				<div class="left">
+					<div class="left-title">
+						<h2>Contact Information</h2>
+						<p>Say something to start a live chat!</p>
+					</div>
+
+					<ul class="contact">
+						<li>
+							<i class="fa-solid fa-phone-volume"></i>
+							<a href="tel:+1012 3456 789">+1012 3456 789</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-envelope"></i>
+							<a href="mailto:demo@gmail.com">demo@gmail.com</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-location-dot"></i>
+							<a href="https://maps.app.goo.gl/2CX8nsqyg8ZkUWkV7">132 Dartmouth Street Boston,
+								Massachusetts 02156
+								United
+								States</a>
+						</li>
+					</ul>
+
+					<ul class="social">
+						<li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+						<li class="insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						<li class="discord"><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+					</ul>
+
+					<span class="left-circle-small"></span>
+					<span class="left-circle-big"></span>
+				</div>
+
+				<form class="form-contact" action="#">
+					<div class="form-row">
+						<label for="fname">First Name</label>
+						<input type="text" name="fname" placeholder="First Name">
+					</div>
+
+					<div class="form-row">
+						<label for="lname">Last Name</label>
+						<input type="text" name="lname" placeholder="Doe">
+					</div>
+
+					<div class="form-row">
+						<label for="email">Email</label>
+						<input type="text" name="email" placeholder="Email">
+					</div>
+
+					<div class="form-row">
+						<label for="phone">Phone Number</label>
+						<input type="text" name="phone" placeholder="+1 012 3456 789">
+					</div>
+
+					<div class="form-row form-row-full">
+						<label class="subject" for="phone">Select Subject?</label>
+						<div class="list-checkbox">
+							<div class="checkbox">
+								<input type="checkbox" class="general" name="general" value="general">
+								<label for="general">General Inquiry</label>
+							</div>
+
+
+							<div class="checkbox">
+								<input type="checkbox" class="general" name="general" value="general">
+								<label for="general">General Inquiry</label>
+							</div>
+
+							<div class="checkbox">
+								<input type="checkbox" class="general" name="general" value="general">
+								<label for="general">General Inquiry</label>
+							</div>
+
+							<div class="checkbox">
+								<input type="checkbox" class="general" name="general" value="general">
+								<label for="general">General Inquiry</label>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="form-row form-row-full">
+						<label for="message">Message</label>
+						<textarea class="text-area" name="text-area" rows="1">Write your message..</textarea>
+					</div>
+
+					<div class="form-row">
+						<input type="submit" name="send" class="send" value="Send Message">
+					</div>
+
+				</form>
+
+			</div>
+		</section>
+
+		<footer>
+			<h2><span>Logo</span> Here</h2>
+
+			<div class="footer-content">
+				<div class="footer-contact">
+					<h4>Reach us</h4>
+					<ul>
+						<li><i class="fa-solid fa-phone-volume"></i><a href="tel:+1012 3456 789">+1012 3456 789</a></li>
+						<li><i class="fa-solid fa-envelope"></i><a href="mailto:demo@gmail.com">demo@gmail.com</a></li>
+						<li><i class="fa-solid fa-location-dot"></i><a
+								href="https://www.google.com/maps/place/ZendVN+-+%C4%90%C3%A0o+T%E1%BA%A1o+L%E1%BA%ADp+Tr%C3%ACnh+Vi%C3%AAn/@10.8599418,106.7362947,17z/data=!3m1!4b1!4m6!3m5!1s0x317527d5640014e7:0x3bb323b29d50dca9!8m2!3d10.8599418!4d106.7388696!16s%2Fg%2F11k8f5pd_w?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D">132
+								Dartmouth Street Boston, Massachusetts 02156 United States</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-link">
+					<h4>Company</h4>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Blogs</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-link footer-link-legal">
+					<h4>Legal</h4>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Services</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Refund Policy</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-link footer-link-quick">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#">Techlabz Keybox</a></li>
+						<li><a href="#">Downloads</a></li>
+						<li><a href="#">Forum</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-form">
+					<h4>Join Our Newsletter</h4>
+					<form action="#">
+						<input type="text" class="text" placeholder="Your email address">
+						<input type="submit" name="subscribe" class="subscribe" value="Subscribe">
+					</form>
+					<p>* Will send you weekly updates for your better tool management.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="config.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+@media only screen and (max-width: 600px) {
+
+  header {
+    padding: 28.5px 20px;
+    margin-bottom: 14px;
+    position: relative;
+  }
+
+  header a.logo {
+    font-size: 18px;
+    display: flex;
+    margin-right: 0px;
+  }
+
+  header a.logo span {
+    font-size: 18px;
+
+  }
+
+  header ul.menu {
+    display: none;
+  }
+
+  header ul.mobile-menu {
+    background-color: #012537;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+
+  header ul.info li a i {
+    color: white;
+  }
+
+  header ul.mobile-menu li {
+    margin-bottom: 15px;
+  }
+
+  header ul.mobile-menu li a {
+    color: white;
+  }
+
+  header ul.mobile-menu li:last-child {
+    margin-bottom: 50px;
+  }
+
+  header ul.info {
+    transform: translate(-50%, 240px);
+    bottom: 0px;
+    display: none;
+  }
+
+  header a.icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    color: #000000;
+  }
+
+  section.contact div.title h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  section.contact div.title p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  section.contact div.body {
+    display: block;
+    width: fit-content;
+    padding: 5px;
+    margin: 0px 20px;
+  }
+
+  section.contact div.body div.left {
+    width: 100%;
+    padding: 15px 0px 25px 0px;
+  }
+
+  section.contact div.body div.left div.left-title {
+    text-align: center;
+  }
+
+  section.contact div.body div.left div.left-title h2 {
+    font-size: 20px;
+  }
+
+  section.contact div.body div.left div.left-title p {
+    font-size: 11px;
+  }
+
+  section.contact div.body div.left ul.contact {
+    margin-top: 12px;
+  }
+
+  section.contact div.body div.left ul.contact li {
+    margin-bottom: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+  }
+
+  section.contact div.body div.left ul.contact li i {
+    margin-bottom: 10px;
+    /* width: 17px;
+    height: 17px; */
+    font-size: 24px;
+  }
+
+  section.contact div.body div.left ul.social {
+    margin-top: 58px;
+    justify-content: center;
+  }
+
+  section.contact div.body div.left ul.social li a {
+    margin-right: 24px;
+  }
+
+  section.contact div.body div.left ul.social li a:last-child {
+    margin-right: 0px;
+  }
+
+  section.contact div.body div.left span.left-circle-small {
+    width: 54px;
+    height: 54px;
+    transform: translate(-80%, -80%);
+  }
+
+  section.contact div.body div.left span.left-circle-big {
+    width: 269px;
+    height: 269px;
+    transform: translate(60%, 60%);
+  }
+
+  section.contact div.body form.form-contact {
+    padding: 30px 21px 64px 21px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section.contact div.body form.form-contact div.form-row {
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  section.contact div.body form.form-contact div.form-row label {
+    margin-bottom: 4px;
+  }
+
+  section.contact div.body form.form-contact div.form-row-full {
+    margin-top: 5px;
+  }
+
+  section.contact div.body form.form-contact div.form-row-full label.subject {
+    margin-bottom: 5px;
+  }
+
+  section.contact div.body form.form-contact div.form-row-full div.list-checkbox {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  section.contact div.body form.form-contact div.form-row-full div.list-checkbox div.checkbox {
+    width: 50%;
+    margin-bottom: 14px;
+  }
+
+  section.contact div.body form.form-contact div.form-row:last-child {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  section.contact div.body form.form-contact div.form-row:last-child input {
+    width: 100%;
+    padding: 10px 91px;
+  }
+
+  footer {
+    padding: 31px 20px 27px 20px;
+  }
+
+  footer h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  footer div.footer-content {
+    padding-top: 30px;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  footer div.footer-content div.footer-contact {
+    width: 70%;
+  }
+
+  footer div.footer-content div.footer-contact h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  footer div.footer-content div.footer-contact ul li {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  footer div.footer-content div.footer-contact ul li:last-child {
+    width: 80%;
+  }
+
+  footer div.footer-content div.footer-contact ul li i {
+    font-size: 17px;
+    margin-bottom: 13px;
+  }
+
+  footer div.footer-content div.footer-contact ul li a {
+    font-size: 12px;
+  }
+
+  footer div.footer-content div.footer-link {
+    width: 30%;
+  }
+
+  footer div.footer-content div.footer-link h4 {
+    font-size: 16px;
+  }
+
+  footer div.footer-content div.footer-link ul li a {
+    font-size: 12px;
+  }
+
+  footer div.footer-content div.footer-link-legal {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  footer div.footer-content div.footer-link-quick {
+    width: 30%;
+    margin-top: 30px;
+  }
+
+  footer div.footer-content div.footer-form {
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  footer div.footer-content div.footer-form h4 {
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
